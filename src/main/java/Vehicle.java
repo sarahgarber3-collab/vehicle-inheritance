@@ -2,6 +2,13 @@ public class Vehicle {
     protected String color;
     protected int numberOfPassengers, cargoCapacity,fuelCapacity;
 
+    public Vehicle(int fuelCapacity, int cargoCapacity, String color, int numberOfPassengers) {
+        this.fuelCapacity = fuelCapacity;
+        this.cargoCapacity = cargoCapacity;
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+    }
+
     public void work() {
 
         System.out.println("This vehicle is " + this.color + " with " + this.numberOfPassengers + " Passenger/s");
